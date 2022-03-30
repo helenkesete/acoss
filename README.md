@@ -45,7 +45,7 @@ $ conda activate acos-env
 >>>compute_features("path-to-your-test-mp3-file/yourmp3filedirectory/yourmp3filename.mp3", params=extractor_profile)
 ```
 *) then you should see something like :
-
+``` terminal
 {'crema': array([[0.05247134, 0.01175734, 0.22490406, ..., 0.08500817, 0.21198744,
         0.01011765],
        [0.05247134, 0.01175734, 0.22490406, ..., 0.08500817, 0.21198744,
@@ -60,7 +60,7 @@ $ conda activate acos-env
        [0.01224974, 0.01418185, 0.28678346, ..., 0.00642559, 0.96438885,
         0.00107002]], dtype=float32), 'track_id': 'yourmp3filename', 'label': 'yourmp3filedirectory'}
 
-
+```
 
 ####################################################################################################
 
