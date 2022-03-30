@@ -24,6 +24,7 @@ Benchmarking results on [Da-Tacos](https://mtg.github.io/da-tacos) dataset can b
 ####################################################################################################
 
 Attention : The standard setup doesnt work properly and it has a lot of library conflicts. So follow this steps instead to get acoss+crema working together if you want to extract cremaPCP feature. follwing instruction uses the forked version of crema from here :https://github.com/hadisaadat/crema.git in which the keras and tensorflow import confliction is already resolved(The original crema repository doesnt work)
+
 *) I recommend to use the conda envirenment to install it.
 *) use following command to install a new conda envirenment:
 ```bash
