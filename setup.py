@@ -42,7 +42,7 @@ setup(
         'numba>=0.43.0',
         'pandas>=0.25.0',
         'scipy==1.2.1',
-        'scikit-learn==0.19.2',
+        'scikit-learn>=0.19.2',
         'deepdish>=0.3.6',
         'librosa>=0.6.1',
         'progress>=1.5'
