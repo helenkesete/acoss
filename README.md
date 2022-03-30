@@ -33,6 +33,14 @@ $ conda activate acos-env
 ```
 *) test if the istallation works well:
 ```python
+>>>extractor_profile = {
+        "sample_rate": 44100,
+        "input_audio_format": ".mp3",
+        "downsample_audio": False,
+        "downsample_factor": 2,
+        "endtime": 180,
+        "features": ["crema",],
+    }
 >>>from acoss.extractors import compute_features
 >>>compute_features("path-to-your-test-mp3-file/yourmp3filedirectory/yourmp3filename.mp3", params=extractor_profile)
 ```
