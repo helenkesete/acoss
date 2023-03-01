@@ -25,14 +25,14 @@ Benchmarking results on [Da-Tacos](https://mtg.github.io/da-tacos) dataset can b
 
 Attention : The standard setup doesnt work properly and it has a lot of library conflicts. So follow this steps instead to get acoss+crema working together if you want to extract cremaPCP feature. follwing instruction uses the forked version of crema from here :https://github.com/hadisaadat/crema.git in which the keras and tensorflow import confliction is already resolved(The original crema repository doesnt work)
 
-*) I recommend to use the conda envirenment installation.
+I recommend to use the conda envirenment installation.
 
-*) use following command to install a new conda envirenment:
+use following command to install a new conda envirenment:
 ```bash
 $ conda env create --file acos-env.yml -n acos-env
 $ conda activate acos-env
 ```
-*) test if the istallation works well:
+test if the istallation works well:
 ```python
 >>>from acoss.extractors import compute_features
 >>>extractor_profile = {
@@ -45,7 +45,7 @@ $ conda activate acos-env
     }
 >>>compute_features("path-to-your-test-mp3-file/yourmp3filedirectory/yourmp3filename.mp3", params=extractor_profile)
 ```
-*) then you should see something like :
+then you should see something like :
 ``` terminal
 {'crema': array([[0.05247134, 0.01175734, 0.22490406, ..., 0.08500817, 0.21198744,
         0.01011765],
@@ -62,8 +62,6 @@ $ conda activate acos-env
         0.00107002]], dtype=float32), 'track_id': 'yourmp3filename', 'label': 'yourmp3filedirectory'}
 
 ```
-
-####################################################################################################
 
 We recommend you to install the package inside a python [virtualenv](https://docs.python.org/3/tutorial/venv.html). 
 
